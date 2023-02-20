@@ -16,7 +16,6 @@ function App() {
         `${apiUrl}?q=${city}&units=metric&appid=${apiKey}`
       )
       const data = await response.json()
-      console.log(data)
       if (response.ok) {
         setDetails(data)
       } else {
