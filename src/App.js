@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import "./App.css"
 import DataCard from "./components/DataCard"
+import NoDataCard from "./components/NoDataCard"
 import SearchBox from "./components/SearchBox"
 const apiUrl = process.env.REACT_APP_API_URL
 const apiKey = process.env.REACT_APP_API_KEY
@@ -30,7 +31,7 @@ function App() {
       <div className="h-full bg-red-100 flex flex-col items-center justify-center">
         <div className="rounded-md shadow-md sm:w-96 bg-gray-50 text-gray-800">
           <SearchBox handleChange={setCity} />
-          <DataCard />
+          {details ? <DataCard /> : <NoDataCard />}
         </div>
       </div>
     </div>
