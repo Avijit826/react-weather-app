@@ -25,7 +25,26 @@ function App() {
     getData()
   }, [city])
 
-  return <div className="flex justify-center items-center"></div>
+  return (
+    <div className="flex justify-center items-center">
+      <div className="App">
+        <SearchBox handleChange={setCity} />
+        <p>hii {city}</p>
+        {details ? (
+          <div>
+            True
+            {/* <img
+              src={`https://openweathermap.org/img/wn/${details.weather[0].icon}@4x.png`}
+              alt="icon"
+            /> */}
+            <p>hii {details.main.temp}</p>
+          </div>
+        ) : (
+          <div>No Data</div>
+        )}
+      </div>
+    </div>
+  )
 }
 
 export default App
