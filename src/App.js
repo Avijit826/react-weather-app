@@ -27,11 +27,11 @@ function App() {
   }, [city])
 
   return (
-    <div className="h-screen bg-green-100">
-      <div className="h-full bg-red-100 flex flex-col items-center justify-center">
+    <div className="h-screen">
+      <div className="h-full bg-gray-100 flex flex-col items-center justify-center">
         <div className="rounded-md shadow-md sm:w-96 bg-gray-50 text-gray-800">
           <SearchBox handleChange={setCity} />
-          {details ? <DataCard /> : <NoDataCard />}
+          {details ? <DataCard data={details} /> : <NoDataCard />}
         </div>
       </div>
     </div>
