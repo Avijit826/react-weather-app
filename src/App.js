@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import "./App.css"
+import DataCard from "./components/DataCard"
 import SearchBox from "./components/SearchBox"
 const apiUrl = process.env.REACT_APP_API_URL
 const apiKey = process.env.REACT_APP_API_KEY
@@ -17,8 +18,7 @@ function App() {
       console.log(data)
       if (response.ok) {
         setDetails(data)
-      }
-      if (!response.ok) {
+      } else {
         setDetails(null)
       }
     }
@@ -26,22 +26,12 @@ function App() {
   }, [city])
 
   return (
-    <div className="flex justify-center items-center">
-      <div className="App">
-        <SearchBox handleChange={setCity} />
-        <p>hii {city}</p>
-        {details ? (
-          <div>
-            True
-            {/* <img
-              src={`https://openweathermap.org/img/wn/${details.weather[0].icon}@4x.png`}
-              alt="icon"
-            /> */}
-            <p>hii {details.main.temp}</p>
-          </div>
-        ) : (
-          <div>No Data</div>
-        )}
+    <div className="h-screen bg-green-100">
+      <div className="h-full bg-red-100 flex flex-col items-center justify-center">
+        <div className="rounded-md shadow-md sm:w-96 bg-gray-50 text-gray-800">
+          <SearchBox handleChange={setCity} />
+          <DataCard />
+        </div>
       </div>
     </div>
   )
