@@ -1,70 +1,116 @@
-# Getting Started with Create React App
+<a name="readme-top"></a>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<!-- TITLE -->
+  <h1 align="center">React Weather App</h1>
 
-## Available Scripts
+<!-- TABLE OF CONTENTS -->
 
-In the project directory, you can run:
+# 📗 Table of Contents
 
-### `npm start`
+- [📖 About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
+- [⭐️ Features](#features)
+- [🚀 Live Preview](#live-preview)
+- [💻 Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+  - [Deployment](#deployment)
+- [👤 Find Me](#author)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<!-- PROJECT DESCRIPTION -->
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# 📖 About Project <a name="about-project"></a>
 
-### `npm test`
+**React Weather App** is a react-based `frontend` only project to get real-time weather updates.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+It uses **OpenWeatherMap** API to fetch the data.
 
-### `npm run build`
+![](https://res.cloudinary.com/avicoder/image/upload/v1677150309/Direct%20Images/react_weather_1_oyorbr.jpg)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# 🛠 Built With <a name="built-with"></a>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Tech Stack <a name="tech-stack"></a>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![HTML](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 
-### `npm run eject`
+![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+# ⭐️ Features <a name="features"></a>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Immediately get the result after typing (no need to search or press `enter` button to submit the data)
+- Viewed pieces of information
+  - Current temperature including maximum and minimum temperatures
+  - Country name of searched city
+  - Wind speed and its direction
+  - Cloud percentage and visibility
+  - Humidity and atmospheric pressure
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+![](https://res.cloudinary.com/avicoder/image/upload/v1677167194/Direct%20Images/react_weather_22_jdwygc.png)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# 🚀 Live Preview <a name="live-preview"></a>
 
-## Learn More
+Hostings
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+[![Live Link](https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7)](https://react-weather-tailwind.netlify.app)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<!-- GETTING STARTED -->
 
-### Code Splitting
+# 💻 Getting Started <a name="getting-started"></a>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Prerequisites
 
-### Analyzing the Bundle Size
+- node
+- npm
+- IDE
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Installation
 
-### Making a Progressive Web App
+1. Get a free API Key at [openweathermap.org/api](https://openweathermap.org/api)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+2. Clone the repo from Terminal
 
-### Advanced Configuration
+```bash
+git clone https://github.com/Avijit826/react-weather-app.git
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+3. Open project folder
 
-### Deployment
+```bash
+   cd react-weather-app-master
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+4. Install required packages
 
-### `npm run build` fails to minify
+```bash
+   npm install
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+5. Create a `.env` file for environment variables. Create variables inside it.
+
+```xml
+REACT_APP_API_URL = <PASTE YOUR API URL>
+REACT_APP_API_KEY = <PASTE YOUR SECRET API KEY>
+```
+
+6. Runs the app in development mode.
+
+```bash
+   npm start
+```
+
+## Deployment
+
+```bash
+   npm run build
+```
+
+![](https://res.cloudinary.com/avicoder/image/upload/v1677167192/Direct%20Images/react_weather_11_c8qbwb.png)
+
+# 👤 Find Me <a name="author"></a>
+
+- [![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Avijit826)
+- [![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/avijitdas826)
+- [![Hashnode](https://img.shields.io/badge/Hashnode-2962FF?style=for-the-badge&logo=hashnode&logoColor=white)](https://avicreation.hashnode.dev)
+
+## <p align="right"><a href="#readme-top">⬆️</a></p>
