@@ -1,7 +1,7 @@
 <a name="readme-top"></a>
 
 <!-- TITLE -->
-  <h1 align="center">React Weather App</h1>
+  <h1 align="center">Real-Time Weather App</h1>
 
 <!-- TABLE OF CONTENTS -->
 
@@ -22,7 +22,7 @@
 
 # 📖 About Project <a name="about-project"></a>
 
-**React Weather App** is a react-based `frontend` only project to get real-time weather updates.
+**Real-Time Weather App** is a react-based `frontend` only project to get real-time weather updates.
 
 It uses **OpenWeatherMap** API to fetch the data.
 
