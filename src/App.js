@@ -8,18 +8,28 @@ const apiKey = process.env.REACT_APP_API_KEY
 function App() {
   const [details, setDetails] = useState()
   const [city, setCity] = useState("")
-  // const [stat, setStat] = useState(400)
+  const [error, setError] = useState()
 
   useEffect(() => {
     const getData = async () => {
-      const response = await fetch(
-        `${apiUrl}?q=${city}&units=metric&appid=${apiKey}`
-      )
-      const data = await response.json()
-      if (response.ok) {
-        setDetails(data)
-      } else {
-        setDetails(null)
+      try {
+        const response = await fetch(
+          `${apiUrl}?q=${city}&units=metric&appid=${apiKey}`
+        )
+        const data = await response.json()
+        if (response.ok) {
+          setDetails(data)
+          setError(null)
+        } else {
+          setDetails(null)
+          setError(data)
+        }
+        
+      } catch (error) {
+        setError({
+          message:"failed to fetch data"
+        })
+        
       }
     }
     getData()
@@ -28,10 +38,11 @@ function App() {
   return (
     <div className="h-screen">
       <div className="h-full bg-gray-100 flex flex-col items-center justify-center">
-        <h2 className="text-xl font-semibold py-4">React Weather</h2>
+        <h2 className="text-xl font-semibold py-4">Real-Time Weather</h2>
+        <p>hooo{error?"true":"false"}</p>
         <div className="rounded-md shadow-md sm:w-96 bg-gray-50 text-gray-800">
           <SearchBox handleChange={setCity} />
-          {details ? <DataCard data={details} /> : <NoDataCard />}
+          {details ? <DataCard data={details} /> : <NoDataCard data = {error}/>}
         </div>
       </div>
     </div>
