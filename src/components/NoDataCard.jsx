@@ -1,6 +1,6 @@
 import React from "react"
 
-const NoDataCard = () => {
+const NoDataCard = ({data}) => {
   return (
     <div className="flex flex-col justify-center items-center text-center h-64 text-xl font-semibold">
       <svg
@@ -171,7 +171,7 @@ const NoDataCard = () => {
           fill="#cacaca"
         />
       </svg>
-      <h2 className="pt-4 pb-8">No City Found</h2>
+      <h2 className="pt-4 pb-8 capitalize">{data?data.message:'type a city'}</h2>
     </div>
   )
 }
