@@ -26,7 +26,7 @@
 
 It uses **OpenWeatherMap** API to fetch the data.
 
-![](https://res.cloudinary.com/avicoder/image/upload/v1677150309/Direct%20Images/react_weather_1_oyorbr.jpg)
+![](https://res.cloudinary.com/avicoder/image/upload/v1679586060/real_time_weather_sr0tdb.jpg)
 
 # 🛠 Built With <a name="built-with"></a>
 
@@ -46,7 +46,7 @@ It uses **OpenWeatherMap** API to fetch the data.
   - Cloud percentage and visibility
   - Humidity and atmospheric pressure
 
-![](https://res.cloudinary.com/avicoder/image/upload/v1677167194/Direct%20Images/react_weather_22_jdwygc.png)
+![](https://res.cloudinary.com/avicoder/image/upload/v1679587153/RTW1_dvzvcb.png)
 
 # 🚀 Live Preview <a name="live-preview"></a>
 
@@ -105,7 +105,7 @@ REACT_APP_API_KEY = <PASTE YOUR SECRET API KEY>
    npm run build
 ```
 
-![](https://res.cloudinary.com/avicoder/image/upload/v1677167192/Direct%20Images/react_weather_11_c8qbwb.png)
+![](https://res.cloudinary.com/avicoder/image/upload/v1679587154/RTW2.1_qycg8c.png)
 
 # 👤 Find Me <a name="author"></a>
 
