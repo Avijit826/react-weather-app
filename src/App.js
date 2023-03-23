@@ -39,7 +39,6 @@ function App() {
     <div className="h-screen">
       <div className="h-full bg-gray-100 flex flex-col items-center justify-center">
         <h2 className="text-xl font-semibold py-4">Real-Time Weather</h2>
-        <p>hooo{error?"true":"false"}</p>
         <div className="rounded-md shadow-md sm:w-96 bg-gray-50 text-gray-800">
           <SearchBox handleChange={setCity} />
           {details ? <DataCard data={details} /> : <NoDataCard data = {error}/>}
